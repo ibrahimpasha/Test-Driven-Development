@@ -1,0 +1,24 @@
+x canary test
+x a dead cell with zero neighbors stays dead
+x a dead cell with one neighbors stays dead
+x a dead cell with two neighbors stays dead
+x a dead cell with three neighbors comes to life
+x a dead cell with four neighbors stays dead
+x a dead cell with five neighbors stays dead
+x a dead cell with six neighbors stays dead
+x a dead cell with seven neighbors stays dead
+x a dead cell with eight neighbors stays dead
+x an active cell with zero neighbors is dead
+x an active cell with 1 neighbor is dead
+x an active cell with 2 neighbors stays active
+x an active cell with 3 neighbors stays active
+x an active cell with 4 neighbors is dead
+x an active cell with 5 neighbors is dead
+x an active cell with 6 neighbors is dead
+x an active cell with 7 neighbors is dead
+x an active cell with 8 neighbors is dead
+x an active cell to check dead constraints returns an exception
+x count neighbors returns number of cells around it
+x neighbors of a cell that is at the corners or edges returns an exception
+x activating a cell return 1
+x deactivating a cell returns 0
