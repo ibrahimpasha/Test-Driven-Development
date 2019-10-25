@@ -1,0 +1,6 @@
+setup.py
+ISS.egg-info/PKG-INFO
+ISS.egg-info/SOURCES.txt
+ISS.egg-info/dependency_links.txt
+ISS.egg-info/requires.txt
+ISS.egg-info/top_level.txt
