@@ -1,0 +1,13 @@
+x canary test
+x test credit check returns true
+x test credit check returns false
+x test criminal history check returns true
+x test criminal history check returns false
+x test employment verification check returns true
+x test employment verification check returns false
+x test citizenship check returns true
+x test citizenship check returns false
+x background check with multiple criteria no failures
+x background check with multiple criteria one failure
+x background check with multiple criteria two failures
+x background check with multiple criteria three failures
