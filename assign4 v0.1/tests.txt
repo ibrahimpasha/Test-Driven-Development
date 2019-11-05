@@ -1,0 +1,4 @@
+x canary test
+x fibonacci returns 0 for the n value 0
+x fibonacci returns 1, 1 for the n value 1
+x fibonacci returns 1, 1, 2, 3, 5, 8, 13, 21 for the n value 30
