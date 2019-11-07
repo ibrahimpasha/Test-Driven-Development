@@ -1,0 +1,11 @@
+x canary test
+x imperative fibonacci returns 1 for n value of 0
+x imperative fibonacci returns 1 for n value of 1
+x imperative fibonacci returns None for the n value of -1
+x imperative fibonacci returns 5 for n value of 4
+x imperative fibonacci returns 21 for n value of 7
+x functional fibonacci returns 1 for n value of 0
+x functional fibonacci returns 1 for n value of 1
+x functional fibonacci returns None for the n value of -1
+x functional fibonacci returns 5 for n value of 4
+x functional fibonacci returns 21 for n value of 7
