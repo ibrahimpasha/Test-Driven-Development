@@ -1,0 +1,21 @@
+x canary test
+x imperative fibonacci returns 1 for n value of 0
+x imperative fibonacci returns 1 for n value of 1
+x imperative fibonacci raises exception for the n value of -1
+x imperative fibonacci returns 5 for n value of 4
+x imperative fibonacci returns 21 for n value of 7
+x functional fibonacci returns 1 for n value of 0
+x functional fibonacci returns 1 for n value of 1
+x functional fibonacci raises exception for the n value of -1
+x functional fibonacci returns 5 for n value of 4
+x functional fibonacci returns 21 for n value of 7
+x recursive fibonacci returns 1 for n value of 0
+x recursive fibonacci returns 1 for n value of 1
+x recursive fibonacci returns None for the n value of -1
+x recursive fibonacci returns 5 for n value of 4
+x recursive fibonacci returns 21 for n value of 7
+x memoized fibonacci returns 1 for n value of 0
+x memoized fibonacci returns 1 for n value of 1
+x memoized fibonacci raises exception for the n value of -1
+x memoized fibonacci returns 5 for n value of 4
+x memoized fibonacci returns 20365011074 for n value of 50
