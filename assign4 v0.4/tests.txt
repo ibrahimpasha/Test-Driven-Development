@@ -1,0 +1,24 @@
+x canary test
+x imperative fibonacci returns 1 for position of 0
+x imperative fibonacci returns 1 for position of 1
+x imperative fibonacci returns 2 for position of 2
+x imperative fibonacci returns 8 for position of 5
+x imperative fibonacci raises exception for position of -1
+
+x functional fibonacci returns 1 for position of 0
+x functional fibonacci returns 1 for position of 1
+x functional fibonacci returns 2 for position of 2
+x functional fibonacci returns 8 for position of 5
+x functional fibonacci raises exception for position of -1
+
+x recursive fibonacci returns 1 for position of 0
+x recursive fibonacci returns 1 for position of 1
+x recursive fibonacci returns 2 for position of 2
+x recursive fibonacci returns 8 for position of 5
+x recursive fibonacci raises exception for position of -1
+
+x memoized fibonacci returns 1 for position of 0
+x memoized fibonacci returns 1 for position of 1
+x memoized fibonacci returns 2 for position of 2
+x memoized fibonacci returns 8 for position of 5
+x memoized fibonacci raises exception for position of -1
