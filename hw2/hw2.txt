@@ -1,0 +1,64 @@
+HW2 Due 11:59PM September 6
+
+In this homework we'll create an initial strategic design for a version of Game of Life.
+
+We'll not be writing any code in this homework, but only creating an initial design.
+
+Conway's Game of Life: <http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>.
+
+Don't worry about being right or wrong here (there is no one right
+design or solution to this problem).
+
+Don't google for answers, it is more fun to arrive at your own solutions and 
+see how your thought process evolves in discussions with your pair and the reviews.
+
+1. How would you design this program which is a GUI application? 
+Draw a UML diagram for your design and refer to it from the text here.
+
+	We are designing Conway's Game of Life. The game is a zero-player game in which after it is initially seeded no more input is necessary. It consists of a two-dimensional grid of cells that are in one of two states, alive or dead. At every step in the game, each cell changes based on the state of its eight neighbors. Before the game starts, the board or grid needs to be seeded with some initial alive cells. From then on, the cells are left to interact on their own. The cell interaction rules are as follows:
+	For a Living Cell:
+		If there are fewer than two living neighbors, it dies.
+		If there are two or three living neighbors, it stays alive.
+		If there are more than three living neighbors, it dies.
+	For a Dead Cell:
+		If it has exactly three living neighbors, then it comes to life (becomes a living cell).
+A typical Game of Life implementation usually allows for the user to toggle the simulation step by step or have it continually run using a predefined time step. 
+	For our design of the game, the UI will consist of a grid of squares and underneath the grid will be three buttons: Next, Run, Clear. Next will allow the user to toggle the next step of the simulation. Run will run the simulation indefinitely with a predefined time step. Clear stops the simulation and resets the grid to all dead cells.
+
+Please refer the UML Diagram named "UML_Diagram.pdf".
+
+GameOfLife is the main class which will run the whole program and it will create and hold the 2 dimensional array which will be the logical representation of the game grid.
+
+The GUI class will hold all of the functions focused around what is presented to the screen. It will contain the buttons themselves as well as the grid layout. It will also manage the mouseclicks onto the grid as well as each button. When the GUI receives a click to the grid, the GUI class will directly change the gameMatrix to indicate change of the cell status. The GUI will also change the grid when the gameMatrix is modified due to the game logic.
+This is where functions/classes will be extended from Kivy built-in functions for managing grids, buttons, and clicks.
+
+The Logic class will hold all of the functions for logic surrounding the game logic. It will control the sliding 3x3 window that will iterate through the game grid and count the active neighbors. After the constraints/interaction rules are checked, a list of cell positions is passed to a function that will activate them or kill them as appropriate. The logic class will also manage the speed or delay at which the grid is updated.
+
+The Cell class itself will hold the functions for a single cell by a position on the grid. The class will contain the necessary functions for checking the cell status, activating and deactivating the cell, as well as counting the active neighbors.
+
+2. Discuss (not just mention) what programming language you would use. 
+
+We will use Python as we are both very familiar with the language. As far as GUI libraries, we will use Kivy. We figured that the GUI library needs to be cross-platform in order for ease of grading on any computer. Kivy code can run on Linux, Windows, OS X, Android, iOS, and even Raspberry Pi.
+
+3. How do you plan to structure the program, what libraries would you use? Here we're looking for details about code directory structure, compilers, IDEs, tools, etc.---things that are at a higher level than the program and the programming language itself.
+
+Language: Python 3.7
+Libraries: Kivy 1.11
+*Python and Kivy will be installed and isolated in a conda virtual environment. The conda environment will simplify the managing of dependencies.
+
+Code Directory Structure
+- Conway's Game of Life/
+	 - src/
+		- GameOfLife.py - Holds GameOfLife class and main function
+		- Cell.py - Holds Cell class
+		- GUI.py - Holds the GUI Class
+		- Logic.py - Holds the game logic
+	 - test/
+		- unittest.py - will hold all of the unit tests
+
+IDE: VSCode or PyCharm
+
+Testing and Build Tools: We will use PyBuilder as a testing and build tool.
+
+Total[10]: 10
+

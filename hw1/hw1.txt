@@ -1,0 +1,36 @@
+﻿Please keep all files related to a homework or an assignment within the appropriate directory. Files checked in outside of specific homework or assignment directory will not be reviewed or graded for that homework/assignment.
+
+Check in and modify files as many times as you like. You will not be able to modify the files after the deadline.
+
+You will work as a pair, both of you are responsible for the completed work in all assignments and homework. Reasonable effort is expected from each person. If you do not check in, you will not receive any scores. When pairing please switch who checks in so there is significant number of check in from each of you.
+
+The deadlines are strict, there will be no extensions. Don't email any code to Venkat or to the mailing list. Your last check in before the deadline will be graded. If your last check in breaks the code, both you and your pair will lose significant points.
+
+Please feel free to ask for frequent reviews. See the reviews/readme.txt file for details on how to ask for reviews.
+
+You can evolve the answers and solutions based on the reviews. Only the latest checkin at the time of review will be looked at. Also the final check in will be the only one graded.
+
+Please read the academic honesty policy posted on the course mailing list.                   
+
+The above details apply to all homework and assignments in this course.                   
+
+Now to homework #1.
+==============================================================================
+HW1: Due 11:59PM August 30
+
+Is design dead according to Martin Fowler in 
+<http://martinfowler.com/articles/designDead.html>?
+
+What are some of the main observations he makes about how we should design?
+
+Relate these recommendations to your personal experiences, where it may have 
+worked or may not have worked for you.
+
+
+	According to Martin Fowler, design is not dead. To properly design and build software, one needs to keep the following learnings in mind. Martin Fowler is a proponent of evolutionary design rather than planned or big up front design. He admits that the only way for evolutionary design to work is to flatten the software change curve. If you are constantly making changes to the code, then you need to keep the cost of doing so low. Testing and Continuous Integration are key to flattening the change curve. Consistently keeping the design simple is another method to keep the change curve flat. And it in order to do that, one can continuously refactor the code base. (Joe) In my previous work, I have found that because I was not familiar with Test Driven Development, that cost of change became too difficult to manage. Without TDD, if the code grows to any appreciable size, then tracking the effect of changes throughout the system becomes quite cumbersome.
+	Martin is also a proponent of YAGNI or You Aren't Gonna Need It. Essentially, you shouldn't add any code today which will only be used by a feature tomorrow. You pay an upfront cost of building them now in hopes that you will gain back the cost later. He believes that will lead you to add complexity to code that may not be necessary when it actually should be implemented. (Ibrahim) In previous experience, I used to overcomplicate the design and would end up building spaghetti code. By tuning older projects, I have improved in streamlining the code and have become better at avoiding unneccessary features.
+	Moreover, Martin is an exponent of using design patterns in a timely manner. He states that you should learn when to apply certain patterns (not too early) and also apply the pattern in its most simple form first. Only add complexity when necessary. And, as part of healthy refactoring, Martin states that you should feel comfortable with dropping design patterns that are not working - essentially, don't get too attached to the design pattern.
+	Also, the author states that diagrams do have their place in XP design or evolutionary design but only if you find them useful. He states that the purpose of diagrams is to highlight the most important aspects of the design. This means that you should draw UML diagrams and only highlight the most important classes, attributes, methods - NOT everything. The code itself is the best source of comprehensive information. (Joe) In my own work, I have found that I fall into the trap of making the diagrams too detailed which means two things: the diagram itself is too busy and thus not very helpful and updating it is more work than its worth.
+	In conclusion, Martin believes design is not dead by any means however the nature of design has changed. He says the new ways to think about effective design have made evolutionary design a reasonable strategy. Building manageable code by keeping future changes in mind, refactoring expertise to make improvements when needed, giving the simple yet optimal solutions for patterns, and effective communication skills using diagrams will direct one to build an effective design.
+
+Total [10}: 10
